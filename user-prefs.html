@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/user-prefs.css">
+    <title>Preferences</title>
+</head>
+
+<body onload="onInit()">
+    <!-- onload="onInitPref()" -->
+
+    <ul class="nav nav-pills sticky-top">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="user-prefs.html">User Preferences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="map.html">Map</a>
+        </li>
+       
+      </ul>
+
+
+    <form id="formRegister" >
+
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="xxx@xxx.xxx" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" />
+
+        <label for="age">Age: <span id="age-span">26</span></label>
+        <input type="range" id="age" name="age" step="1" min="18" max="120" value="28"
+            onchange="showAge(this.value)" />
+
+
+        <label for="bgColor">Set Background Color: </label>
+        <input type="color" id="bgColor" name="bgColor" value="#1d1d1d" id="bgColor" />
+
+        <label for="txtColor">Set Text Color: </label>
+        <input type="color" id="txtColor" name="txtColor" value="#faebd7" id="txtColor" />
+
+        <label for="birth-date">Date of Birth:</label>
+        <input type="date" id="birth-date" name="birth-date" />
+
+        <label for="birth-time">Time of Birth:</label>
+        <input type="time" name="birth-time" id="birth-time" />
+
+
+        
+        <input type="submit" value="Register" />
+       
+
+    </form>
+
+
+<script>
+
+//   const elForm = document.querySelector('#formRegister')
+//   console.log('elForm:', elForm)
+//     elForm.addEventListener('submit',(event)=>{
+//         event.preventDefault()
+//     })
+    
+</script>
+    <script src="lib/bootstrap/bootstrap.bundel.js"></script>
+    <!-- <script src="lib/jquery/jquery.js"></script> -->
+    <script src="js/service/util.service.js"></script>
+    <script src="js/service/user.service.js"></script>
+    <!-- <script src="js/service/place.service.js"></script> -->
+    <script src="js/user-pref.control.js"></script>
+</body>
+
+</html>

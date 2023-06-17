@@ -1,0 +1,23 @@
+body {
+    box-sizing: border-box;
+    background-color: rgb(165, 165, 164);
+}
+
+.nav{
+    padding: 10px;
+    background-color: rgb(250, 247, 237);
+}
+
+#formRegister {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 12vh;
+    margin-inline: 15vw;
+    background-color: #faebd7;
+    color: #1d1d1d;
+    border-radius: 1em;
+}
+#formRegister>*{
+    margin-block-end: 1em;
+}

@@ -1,0 +1,24 @@
+body{
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    color:black;
+}
+.grid-container{
+    margin-block-start: 5vh;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    
+}
+
+.txt{
+    margin-block-start: 5vh;
+    margin-inline-start: 5vw;
+    padding: 10px;
+    border-left: 2px solid black;
+}
+
+
+
+.nav{
+    padding: 10px;
+    background-color: rgb(250, 247, 237);
+}

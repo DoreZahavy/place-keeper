@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/map.css">
+    <title>Document</title>
+</head>
+
+<body onload="onInit()">
+
+    <ul class="nav nav-pills sticky-top">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html"  href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="user-prefs.html">User Preferences</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="map.html">Map</a>
+        </li>
+
+    </ul>
+
+
+    <button onclick="panToCurLoc()" class="btn btn-outline-danger curr-loc"><img src="../img/loc.png"></button>
+    
+    <div class="map"></div>
+    <ul class="places-list"></ul>
+
+
+    <div class="alert alert-dark" role="alert">
+        A few moments please
+    </div>
+
+    <script src="lib/bootstrap/bootstrap.bundel.js"></script>
+    <!-- <script src="lib/jquery/jquery.js"></script> -->
+    <script src="js/service/util.service.js"></script>
+    <!-- <script src="js/service/user.service.js"></script> -->
+    <script src="js/service/place.service.js"></script>
+    <script src="js/place.control.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD89FSIUPShF_UwiT8WUZLiwK8EQMClDWE&callback=initMap"></script>
+</body>
+
+</html>
