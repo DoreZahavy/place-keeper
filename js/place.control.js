@@ -9,6 +9,7 @@ function onInit() {
     initMap()
     gMap.addListener('click', ev => {
         const name = prompt('Place name?', 'Place 1')
+        if(!name) return
         const lat = ev.latLng.lat()
         const lng = ev.latLng.lng()
         addPlace(name, lat, lng, gMap.getZoom())
